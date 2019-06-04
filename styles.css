@@ -12,9 +12,8 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #384047;
-    padding: 20px
 }
 
 form {
@@ -28,24 +27,18 @@ h1 {
 }
 
 input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
 input[type="email"],
 input[type="number"],
-input[type="search"],
 input[type="tel"],
-input[type="time"],
-input[type="url"],
 textarea,
 select {
     border: none;
     font-size: 16px;
-    height: auto;
+    height: 50px;
     padding: 15px;
+    margin: 10px 0 20px 0;
     width: 100%;
     color: #000000;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     outline-color: #f9988e
 }
 
@@ -54,9 +47,6 @@ textarea,
     background-color: #f6f6f6;
 }
 
-select {
-    padding: 15px;
-}
 
 input[type="radio"],
 input[type="checkbox"] {
@@ -77,18 +67,18 @@ fieldset {
 legend {
     font-size: 1.3em;
     margin: 10px 0;
-    padding: 10px 0;
+    padding: 20px 0;
     letter-spacing: .05em;
 }
 
 input {
-    margin-bottom: 10px;
     background-color: #f6f6f6;
     border-radius: 5px;
 }
 
-.label {
-    margin: 10px 0;
+form,
+.heroText {
+    padding: 20px;
 }
 
 /**********************************************************
@@ -107,9 +97,8 @@ header h1 {
 
 .heroText {
     text-align: center;
-    margin: 4px 0;
-    padding: 10px 0;
-    border-bottom: 5px solid #f9988e;
+    margin: 20px 0;
+    padding: 10px 20px;
 }
 
 .heroText h2 {
@@ -122,6 +111,14 @@ header h1 {
     color: #0000003d;
 }
 
+.heroText::after {
+    display: block;
+    height: 5px;
+    background-color: #f9988e;
+    content: " ";
+    width: 100%;
+}
+
 /**********************************************************
                      CONTACT                                                
 **********************************************************/
@@ -130,9 +127,106 @@ header h1 {
     width: 100%;
 }
 
-
+#zip {
+    max-width: 40%;
+    display: block;
+}
 
 
 /**********************************************************
                     NEWSLETTER                                             
 **********************************************************/
+
+.newsletter {
+    border-top: 4px solid #f9988e;
+    margin-top: 30px;
+}
+
+.newsletter fieldset {
+    margin-top: 15px;
+}
+
+.newsletter input {
+    margin: 10px 0;
+}
+
+.checkbox {
+    margin-left: 10px;
+}
+
+#js,
+#plainFormat {
+    margin-bottom: 30px;
+}
+
+#htmlFormat {
+    margin-top: 20px;
+}
+
+textarea {
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+/**********************************************************
+                        BUTTON                                                 
+**********************************************************/
+button {
+    width: 100%;
+    border: none;
+    padding: 20px 0;
+    margin-top: 30px;
+    background-color: #f9988e;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.3em;
+}
+
+/**********************************************************
+                         FOOTER                                            
+**********************************************************/
+.footer {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.footer p {
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: .9em;
+    font-style: italic;
+    color: rgba(56, 64, 71, 0.301);
+}
+
+
+
+
+
+
+
+
+
+/***************************************************************************************
+                                            QUERIES                                
+****************************************************************************************/
+
+@media only screen and (min-width: 760px) {
+
+    form,
+    .heroText,
+    .newsletter,
+    .footer {
+        max-width: 760px;
+    }
+
+    form {
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .heroText {
+        margin: 20px auto 0 auto;
+    }
+
+}
