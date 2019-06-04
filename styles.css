@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #384047;
+    padding: 20px
+}
+
+form {
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+h1 {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    padding: 15px;
+    width: 100%;
+    color: #000000;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    outline-color: #f9988e
+}
+
+textarea,
+#state {
+    background-color: #f6f6f6;
+}
+
+select {
+    padding: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+
+::placeholder {
+    text-align: right;
+    color: #f9998ea9;
+    font-style: italic;
+    font-size: .8em;
+}
+
+fieldset {
+    border: transparent;
+}
+
+legend {
+    font-size: 1.3em;
+    margin: 10px 0;
+    padding: 10px 0;
+    letter-spacing: .05em;
+}
+
+input {
+    margin-bottom: 10px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+
+.label {
+    margin: 10px 0;
+}
+
+/**********************************************************
+                        HEADER                                          
+**********************************************************/
+header {
+    background-color: #f9988e;
+    color: white;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    word-spacing: .5em;
+}
+
+.heroText {
+    text-align: center;
+    margin: 4px 0;
+    padding: 10px 0;
+    border-bottom: 5px solid #f9988e;
+}
+
+.heroText h2 {
+    margin-bottom: -15px;
+}
+
+.heroText p {
+    margin: 30px auto;
+    max-width: 80%;
+    color: #0000003d;
+}
+
+/**********************************************************
+                     CONTACT                                                
+**********************************************************/
+.contact {
+    border-top: 2px solid #f9988e;
+    width: 100%;
+}
+
+
+
+
+/**********************************************************
+                    NEWSLETTER                                             
+**********************************************************/
